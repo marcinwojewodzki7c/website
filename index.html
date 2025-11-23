@@ -1,10 +1,78 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html>
 <head>
-  <title>itsmgxb.online</title>
+<meta charset="UTF-8">
+<title>itsmgxb.online</title>
+
+<style>
+    html, body {
+        height: 100%;
+        margin: 0;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding-top: 20px;
+
+        background: linear-gradient(45deg,
+    red,
+    orange,
+    yellow,
+    green,
+    cyan,
+    blue,
+    violet,
+    red,
+    orange,
+    yellow
+);
+background-size: 600% 100%;
+animation: rainbow 12s linear infinite;
+
+        image-rendering: pixelated;
+        filter: contrast(200%) saturate(200%) blur(0px);
+    }
+
+    @keyframes rainbow {
+        0%   { background-position: 0% 50%; }
+        100% { background-position: 100% 50%; }
+    }
+
+    nav {
+        background: rgba(0,0,0,0.5);
+        padding: 10px 20px;
+        border-radius: 6px;
+        display: flex;
+        gap: 20px;
+        font-family: sans-serif;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+    }
+</style>
 </head>
 
 <body>
 
-  <h1>cloudflare</h1>
-  
+<img src="logo.gif" alt="Logo">
+
+<nav>
+    <a href="/NAS">NAS</a>
+    <a href="/contact">Kontakt</a>
+</nav>
+
+	<iframe frameborder="0" src="https://itch.io/embed/3759425?linkback=true&amp;border_width=4&amp;bg_color=ffaa44&amp;fg_color=222222&amp;link_color=0000ba&amp;border_color=cc9d00" width="558" height="173"><a href="https://ltsmgxb.itch.io/mango-heist">Mango Heist by ltsmgxb</a></iframe>	
+
+
 </body>
+</html>
